@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    
+    <filter>
+        <filter-name> filterdemo </filter-name>
+        <filter-class> com.royalworld.backend.ValidationFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name> filterdemo </filter-name>
+        <url-pattern> /Register </url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name> registerdemo </servlet-name>
+        <servlet-class> com.royalworld.backend.Register </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> registerdemo </servlet-name>
+        <url-pattern> /Register </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name> logindemo </servlet-name>
+        <servlet-class> com.royalworld.backend.Login </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> logindemo </servlet-name>
+        <url-pattern> /Login </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name> logoutdemo </servlet-name>
+        <servlet-class> com.royalworld.backend.Logout </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> logoutdemo </servlet-name>
+        <url-pattern> /Logout </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name> forgotpassworddemo </servlet-name>
+        <servlet-class> com.royalworld.backend.ForgotPassword </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> forgotpassworddemo </servlet-name>
+        <url-pattern> /ForgotPassword </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name> uploadprofilepicturedemo </servlet-name>
+        <servlet-class> com.royalworld.backend.UploadProfilePicture </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> uploadprofilepicturedemo </servlet-name>
+        <url-pattern> /UploadProfilePicture </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name> uploadaadhaarandpannodemo </servlet-name>
+        <servlet-class> com.royalworld.backend.UploadAadhaarAndPanCardNumber </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> uploadaadhaarandpannodemo </servlet-name>
+        <url-pattern> /UploadAadhaarAndPanCardNumber </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name> edituserprofileaboutdetailsdemo </servlet-name>
+        <servlet-class> com.royalworld.backend.EditUserProfileAboutDetails </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> edituserprofileaboutdetailsdemo </servlet-name>
+        <url-pattern> /EditUserProfileAboutDetails </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name> adduseraccountsdetailsdemo </servlet-name>
+        <servlet-class> com.royalworld.backend.AddUserAccountsDetails </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> adduseraccountsdetailsdemo </servlet-name>
+        <url-pattern> /AddUserAccountsDetails </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name> userloginchangepassworddemo </servlet-name>
+        <servlet-class> com.royalworld.backend.UserLoginChangePassword </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> userloginchangepassworddemo </servlet-name>
+        <url-pattern> /UserLoginChangePassword </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name> usermoneytransactionchangepassworddemo </servlet-name>
+        <servlet-class> com.royalworld.backend.UserMoneyTransactionChangePassword </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> usermoneytransactionchangepassworddemo </servlet-name>
+        <url-pattern> /UserMoneyTransactionChangePassword </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name> updateuseraccountsdetailsdemo </servlet-name>
+        <servlet-class> com.royalworld.backend.UpdateUserAccountsDetails </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> updateuseraccountsdetailsdemo </servlet-name>
+        <url-pattern> /UpdateUserAccountsDetails </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name> removeuseraccountdetails </servlet-name>
+        <servlet-class> com.royalworld.backend.RemoveUserAccountDetails </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> removeuseraccountdetails </servlet-name>
+        <url-pattern> /RemoveUserAccountDetails </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name> usercontactusdetailsdemo </servlet-name>
+        <servlet-class> com.royalworld.backend.UserContactUsDetails </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> usercontactusdetailsdemo </servlet-name>
+        <url-pattern> /UserContactUsDetails </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name> addmytaskdaybydaydetailsdemo </servlet-name>
+        <servlet-class> com.royalworld.backend.AddMyTaskDayByDayDetails </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> addmytaskdaybydaydetailsdemo </servlet-name>
+        <url-pattern> /AddMyTaskDayByDayDetails </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name> userrequestplanfromusersidedemo </servlet-name>
+        <servlet-class> com.royalworld.backend.UserRequestPlanFromUserSide </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> userrequestplanfromusersidedemo </servlet-name>
+        <url-pattern> /UserRequestPlanFromUserSide </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name> requestmoneyfromusersidedemo </servlet-name>
+        <servlet-class> com.royalworld.backend.RequestMoneyFromUserSide </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> requestmoneyfromusersidedemo </servlet-name>
+        <url-pattern> /RequestMoneyFromUserSide </url-pattern>
+    </servlet-mapping>
+    
+</web-app>

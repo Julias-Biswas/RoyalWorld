@@ -1,0 +1,1816 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11 Jan, 2022, 7:50:52 PM
+    Author     : julia
+*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    border: 0px;
+    margin: 0px;
+}
+body
+{
+    margin: 0;
+    background: #ffffff;
+    font-family: Arial , Helvetica , sans-serif;
+}
+.col-md-1 , .col-md-2 , .col-md-3 , .col-md-4 , .col-md-5 , .col-md-6 , .col-md-7 , .col-md-8 , .col-md-9 , .col-md-10 , .col-md-11 , .col-md-12
+{
+    padding: 10px 20px;
+}
+.header_design
+{
+    background: linear-gradient(to left, #9900ff 0%, #663300 100%);
+}
+.logo_img_design
+{
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+.logo_name_design
+{
+    margin-top: 17px;
+    color: white;
+    font-size: 35px;
+    float: right;
+    text-decoration: none;
+    margin-right: 580px;
+}
+.logo_name_design:hover
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logo_name_design_after_login
+{
+    margin-top: 17px;
+    color: white;
+    font-size: 35px;
+    float: right;
+    text-decoration: none;
+    margin-right: 480px;
+}
+
+.logo_name_design_after_login:hover
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menubar_design
+{
+    color: white;
+    font-size: 20px;
+    padding: 0 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.menubar_design:hover
+{
+    color: #c9720f;
+    text-decoration: none;
+}
+.menubar_design_button
+{
+    border: 1px solid #6666ff;
+    background: #6666ff;
+    height: 40px;
+    width: 120px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.menubar_design_button:hover
+{
+    background: #99b463;
+    color: white;
+    border: 1px solid #99b463;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.request_plan_design_button
+{
+    border: 1px solid #6666ff;
+    background: #0000ff;
+    height: 40px;
+    width: 350px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.request_plan_design_button:hover
+{
+    background: #4c4cf5;
+    color: white;
+    border: 1px solid #99b463;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.topnav
+{
+    overflow: hidden;
+}
+
+.topnav a
+{
+    float: left;
+    color: white;
+    font-size: 20px;
+    padding: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.topnav a:hover
+{
+    color: #c9720f;
+    text-decoration: none;
+}
+
+.topnav a.active
+{
+    display: block;
+}
+
+.topnav .icon
+{
+    display: none;
+}
+
+.footer
+{
+    background: white;
+}
+.footer_img_design
+{
+    margin-left: 40%;
+}
+#footernavbar ul
+{
+    list-style: none;
+}
+#footernavbar ul li
+{
+    padding: 10px;
+}
+#footernavbar ul li a
+{
+    color: #666666;
+    text-decoration: none;
+}
+#footernavbar ul li a:hover
+{
+    color: #00cccc;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+.footer_mail
+{
+    font-size: 14px;
+    font-style: normal;
+    font-family: fantasy;
+}
+.footer_icon_design
+{
+    padding: 0 10px;
+    font-size: 20px;
+    color: #999999;
+    text-decoration: none;
+}
+.footer_icon_design:hover
+{
+    text-decoration: none;
+    color: #0033ff;
+}
+.register_div_design
+{
+    text-align: center;
+    //background: linear-gradient(to bottom, #ffffff -8%, #ffccff 103%);
+    background: linear-gradient(to bottom right, #ffcccc 46%, #66ffcc 100%);
+    box-shadow: 0px 0px 0px grey inset;
+    border-radius: 15px;
+}
+.login_div_design
+{
+    text-align: center;
+    background: linear-gradient(to bottom left, #ffff99 0%, #ccffff 100%);
+    box-shadow: 0px 0px 0px grey inset;
+    border-radius: 15px;
+}
+.forgot_password_div_design
+{
+    text-align: center;
+    background: linear-gradient(to top left, #00ccff -30%, #ffffcc 71%);
+    box-shadow: 0px 0px 0px grey inset;
+    border-radius: 15px;
+}
+
+.about-user-and-more-details-div-design
+{
+    text-align: center;
+    background: linear-gradient(to top left, #ffcc99 0%, #ccffcc 66%);
+    box-shadow: 0px 0px 0px grey inset;
+    border-radius: 15px;
+}
+
+.bank-add-and-transaction-password-div-design
+{
+    text-align: center;
+    background: linear-gradient(to bottom right, #ff6699 0%, #ccffff 66%);
+    box-shadow: 0px 0px 0px grey inset;
+    border-radius: 15px;
+}
+
+.view-all-banks-and-edit-delete-all-banks-div-design
+{
+    text-align: left;
+    background: linear-gradient(to bottom, #ffffff -31%, #ccccff 128%);
+    color: #000000;
+    box-shadow: 1px 1px 1px grey;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.view-all-banks-and-edit-delete-all-banks-div-design:hover
+{
+    box-shadow: 4px 2px 4px 2px #f2bcc6,-4px -2px 4px 2px #f2bcc6!important;
+    border: none !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.register_header
+{
+    font-size: 30px;
+    color: #009966;
+    margin-left: 5%;
+    text-decoration-color: #0000cc;
+}
+.textfield_div_design
+{
+    border: 2px solid gray;
+    border-radius: 5px;
+    width: 250px;
+    height: 35px;
+    padding: 7px 10px;
+    transition : 2s;
+}
+.textfield_div_design:hover
+{
+    border: 2px solid #ffcc99;
+    border-radius: 10px;
+    transition : 2s;
+}
+.another_textfield_div_design
+{
+    border: 2px solid gray;
+    border-radius: 5px;
+    width: 350px;
+    height: 35px;
+    padding: 7px 10px;
+    transition : 2s;
+}
+.another_textfield_div_design:hover
+{
+    border: 2px solid #ffcc99;
+    border-radius: 10px;
+    transition : 2s;
+}
+
+.copy_paste_textfield_div_design
+{
+    border: 2px solid #0000ff;
+    border-radius: 5px;
+    width: 700px;
+    height: 35px;
+    padding: 7px 10px;
+    transition : 2s;
+}
+
+.copy_paste_textfield_div_design:hover
+{
+    border: 2px solid #00cccc;
+    border-radius: 10px;
+    transition : 2s;
+}
+
+.textarea_div_design
+{
+    border: 2px solid gray;
+    border-radius: 5px;
+    width: 350px;
+    height: 100px;
+    padding: 7px 10px;
+    transition : 2s;
+}
+.textarea_div_design:hover
+{
+    border: 2px solid #ffcc99;
+    border-radius: 10px;
+    transition : 2s;
+}
+
+.another-text-area-div-design
+{
+    border: 2px solid gray;
+    border-radius: 5px;
+    width: 350px;
+    height: 70px;
+    padding: 7px 10px;
+    transition : 1s;
+}
+
+.another-text-area-div-design:hover
+{
+    border: 2px solid #ffcc99;
+    border-radius: 10px;
+    transition : 1s;
+}
+
+.small_text_area_div_design
+{
+    border: 2px solid gray;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    padding: 7px 10px;
+    transition : 0.5s;
+}
+
+.small_text_area_div_design:hover
+{
+    border: 2px solid #ffcc99;
+    border-radius: 10px;
+    transition : 0.5s;
+}
+
+.radiofield_div_design
+{
+    padding: 7px 10px;
+}
+.register_btn_div_design
+{
+    width: 200px;
+    height: 40px;
+    font-size: 22px;
+    background: #0066ff;
+    color: white;
+    border: 1px solid #0066ff;
+    border-radius: 10px;
+    transition: 2s;
+}
+.register_btn_div_design:hover
+{
+    color: white;
+    border-radius: 20px;
+    transition: 2s;
+}
+.login_href_design
+{
+    text-decoration: none;
+    color: #0000ff;
+    font-size: 16px;
+    font-weight: 700;
+}
+.login_href_design:hover
+{
+    text-decoration: none;
+    color: #009900;
+}
+.forgot_pass_div_design
+{
+    text-decoration: none;
+    color: #1c83e3;
+}
+.forgot_pass_div_design:hover
+{
+    text-decoration: none;
+    color: #1c05fa;
+}
+.copyright_hyper_link_design
+{
+    color: #333333;
+    text-decoration: none;
+}
+.copyright_hyper_link_design:hover
+{
+    color: #cccccc;
+    text-decoration: none;
+}
+.job_search_div
+{
+    text-align: center;
+    margin: 2px;
+    box-shadow: 5px 5px 0px #ebebeb, 5px 5px 5px #ebebeb ;
+}
+.about_us_header_div_design
+{
+    font-size: 28px;
+    color: #ff0099;
+}
+.our_plan_heading_design
+{
+    font-size: 26px;
+    color: #0000ff;
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
+.our_plan_investment_amount_design
+{
+    color: #000000;
+    font-size: 23px;
+    font-weight: 600;
+}
+.our_plan_benefit_design
+{
+    color: #000000;
+    font-size: 16px;
+}
+.our_plan_left_right_claim_design
+{
+    margin-left: 30%;
+    color: #000000;
+    font-size: 23px;
+    font-weight: 600;
+}
+.our_plan_column_design
+{
+    border: 1px solid #99f6de;
+    box-shadow: 2px 2px 2px #99f6de;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;  
+}
+.our_plan_column_design:hover
+{
+    background-color: #92b6fd;
+    color: #ffffff;
+    box-shadow: 5px 3px 5px 3px #f2f2f2,-5px -3px 5px 3px #f2f2f2!important;
+    border: none !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.our-varity-div-design
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #33ff33;
+    box-shadow: 1px 1px 1px #33cc00;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.our-varity-div-design:hover
+{
+    background-color: #3399ff;
+    color: #ffffff;
+    box-shadow: 2px 1px 2px 1px #f2f2f2,-2px -1px 2px 1px #f2f2f2!important;
+    border: none !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.our-plan-details-div-design-one
+{
+    background: #0000cc;
+    border: 1px solid #0000cc;
+    box-shadow: 2px 2px 2px #6666ff;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.our-plan-details-div-design-one:hover
+{
+    box-shadow: 3px 2px 3px 2px #9999ff,-3px -2px 3px 2px #9999ff!important;
+    border: none !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.our-plan-details-div-design-two
+{
+    background: #00cc33;
+    border: 1px solid #00cc00;
+    box-shadow: 2px 2px 2px #33cc00;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.our-plan-details-div-design-two:hover
+{
+    box-shadow: 3px 2px 3px 2px #99ff99,-3px -2px 3px 2px #99ff99!important;
+    border: none !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.our-plan-details-div-design-three
+{
+    background: #f6198e;
+    border: 1px solid #f3419f;
+    box-shadow: 2px 2px 2px #f8a7d2;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.our-plan-details-div-design-three:hover
+{
+    box-shadow: 3px 2px 3px 2px #f8a7d2,-3px -2px 3px 2px #f8a7d2!important;
+    border: none !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.our-plan-details-div-design-four
+{
+    background: #ff3300;
+    border: 1px solid #ff3300;
+    box-shadow: 2px 2px 2px #ff9999;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.our-plan-details-div-design-four:hover
+{
+    box-shadow: 3px 2px 3px 2px #ff9999,-3px -2px 3px 2px #ff9999!important;
+    border: none !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.alert_error 
+{
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}
+
+.closebtn_error
+{
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn_error:hover
+{
+    color: black;
+}
+
+.alert_success
+{
+    padding: 20px;
+    background-color: #339900;
+    color: white;
+}
+
+.closebtn_success
+{
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn_success:hover
+{
+    color: black;
+}
+
+.rupess-design-our-plan
+{
+    color: #ffffff;
+    margin-left: 14%;
+}
+
+.text-color-and-design
+{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.text-fund-color-and-design
+{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.text-fund-color-and-design:hover
+{
+    color: #3333ff;
+    text-decoration: none;
+}
+
+.profile-all-task-div-design
+{
+    text-decoration: none;
+}
+
+.profile-all-task-div-design:hover
+{
+    text-decoration: none;
+}
+
+.text-color-and-rupees-design
+{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.text-fund-color-and-rupees-design
+{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+.text-font-and-design-div
+{
+    text-align: center;
+    border: 1px solid #cccc00;
+    border-radius: 10px;
+    background: #cccc00;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.user-profile-change-password-font-design-div
+{
+    text-align: center;
+    border: 1px solid #fd88f2;
+    border-radius: 10px;
+    background: #fd88f2;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.text-hyperlink-design-and-color
+{
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.text-hyperlink-design-and-color:hover
+{
+    text-decoration: dotted;
+    color: #99ccff;
+}
+
+.dashboard-text-design
+{
+    color: #009999;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.level-one-box-design
+{
+    background: #ff3ad4;
+    border: 1px solid #ff3399; 
+    box-shadow: 2px 2px 2px #ffcdff; 
+    border-radius: 0px;
+}
+
+.level-two-box-design
+{
+    background: #ff6600;
+    border: 1px solid #ff6600; 
+    box-shadow: 2px 2px 2px #ff9966; 
+    border-radius: 0px;
+}
+
+.level-three-box-design
+{
+    background: #ff0000;
+    border: 1px solid #ff0000; 
+    box-shadow: 2px 2px 2px #ff6666; 
+    border-radius: 0px;
+}
+
+.level-one-members-design
+{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.level-one-box-without-color-design
+{
+    background: #ffffff;
+    border: 1px solid #ff3399; 
+    box-shadow: 2px 2px 2px #ffcdff; 
+    border-radius: 0px;
+}
+
+.level-two-box-without-color-design
+{
+    background: #ffffff;
+    border: 1px solid #ff6600; 
+    box-shadow: 2px 2px 2px #ff9966; 
+    border-radius: 0px;
+}
+
+.level-three-box-without-color-design
+{
+    background: #ffffff;
+    border: 1px solid #ff3333; 
+    box-shadow: 2px 2px 2px #ff6666; 
+    border-radius: 0px;
+}
+
+.level-one-members-without-color-design
+{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.total-balance-design
+{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.total-balance-and-rupees-design
+{
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.total-income-sponsor-income-level-income-design-div
+{
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.button-fund-add-design
+{
+    height: 40px;
+    width: 150px;
+    color: #ffffff;
+    background: #9999ff;
+    border: 1px solid #9999ff;
+    border-radius: 10px;
+    float: right;
+    transition: 0.5s;
+}
+
+.button-fund-add-design:hover
+{
+    background: #6666ff;
+    border: 1px solid #6666ff;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+
+.button-add-account-design-div
+{
+    height: 45px;
+    width: 60px;
+    color: #ffffff;
+    background: #009999;
+    border: 1px solid #009999;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-add-account-design-div:hover
+{
+    box-shadow: 3px 2px 3px 2px #ebebfe,-3px -2px 3px 2px #ebebfe!important;
+    border: none !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-kyc-design-div
+{
+    height: 45px;
+    width: 60px;
+    color: #ffffff;
+    background: #00cc00;
+    border: 1px solid #00cc00;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-kyc-design-div:hover
+{
+    box-shadow: 3px 2px 3px 2px #ccffcc,-3px -2px 3px 2px #ccffcc!important;
+    border: none !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-view-bank-design-div
+{
+    height: 45px;
+    width: 60px;
+    color: #ffffff;
+    background: #339467;
+    border: 1px solid #339467;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-view-bank-design-div:hover
+{
+    box-shadow: 3px 2px 3px 2px #33e7a5,-3px -2px 3px 2px #33e7a5!important;
+    border: none !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-change-password-design-div
+{
+    height: 45px;
+    width: 60px;
+    color: #ffffff;
+    background: #d9424a;
+    border: 1px solid #d9424a;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-change-password-design-div:hover
+{
+    box-shadow: 3px 2px 3px 2px #ffcccc,-3px -2px 3px 2px #ffcccc!important;
+    border: none !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-topup-design-div
+{
+    height: 45px;
+    width: 60px;
+    color: #ffffff;
+    background: #cccc00;
+    border: 1px solid #cccc00;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-topup-design-div:hover
+{
+    box-shadow: 3px 2px 3px 2px #ffffcc,-3px -2px 3px 2px #ffffcc!important;
+    border: none !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-withdraw-design-div
+{
+    height: 45px;
+    width: 60px;
+    color: #ffffff;
+    background: #ff6600;
+    border: 1px solid #ff6600;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-withdraw-design-div:hover
+{
+    box-shadow: 3px 2px 3px 2px #fae9d3,-3px -2px 3px 2px #fae9d3!important;
+    border: none !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-fundmove-design-div
+{
+    height: 45px;
+    width: 60px;
+    color: #ffffff;
+    background: #cc00cc;
+    border: 1px solid #cc00cc;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-fundmove-design-div:hover
+{
+    box-shadow: 3px 2px 3px 2px #facbfb,-3px -2px 3px 2px #facbfb!important;
+    border: none !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-share-design-div
+{
+    height: 45px;
+    width: 60px;
+    color: #ffffff;
+    background: #00cccc;
+    border: 1px solid #00cccc;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-share-design-div:hover
+{
+    box-shadow: 3px 2px 3px 2px #67ffff,-3px -2px 3px 2px #67ffff!important;
+    border: none !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-view-ads-design-div
+{
+    height: 45px;
+    width: 60px;
+    color: #ffffff;
+    background: #ffce5e;
+    border: 1px solid #ffce5e;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-view-ads-design-div:hover
+{
+    box-shadow: 3px 2px 3px 2px #fffdb5,-3px -2px 3px 2px #fffdb5!important;
+    border: none !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.column-text-and-image-design-div
+{
+    height: 200px;
+    width: 200px;
+    background: #323070;
+    border: 1px solid #323070;
+    border-radius: 5px;
+}
+
+.wallet-transfer-and-services-design-div
+{
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.user-profile-change-password-text-design-div
+{
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.upload-image-button-design-div
+{
+    font-size: 20px;
+    font-weight: 700;
+    height: 40px;
+    width: 200px;
+    border: 0.5px solid #3333ff;
+    border-radius: 10px;
+    color: #ffffff;
+    background: #3333ff;
+    transition: 0.5s;
+}
+
+.upload-image-button-design-div:hover
+{
+    color: #ffffff;
+    background: #0000ff;
+    border: 0.5px solid #0000ff;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.or-text-design-div
+{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 900;
+    margin-left: 80px;
+}
+
+.back-to-profile-page-hyperlink-design-div
+{
+    margin-left: 25px;
+    color: #ff0000;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.back-to-profile-page-hyperlink-design-div:hover
+{
+    margin-left: 25px;
+    text-decoration: none;
+    color: #cc0000;
+}
+
+.bootstrap-icon-design
+{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.bootstrap-icon-design:hover
+{
+    color: #cccccc;
+}
+
+.topup-withdraw-fundmove-share-hyper-link-design-div
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.topup-withdraw-fundmove-share-hyper-link-design-div:hover
+{
+    color: #0000ff;
+    text-decoration: none;
+}
+
+.previous-logo-design-div
+{
+    margin: 10px;
+    font-size: 28px;
+    color: #ff0000;
+    font-weight: 800;
+    text-decoration: none;
+    float: left;
+}
+
+.previous-logo-design-div:hover
+{
+    color: #cc0000;
+    text-decoration: none;
+}
+
+.wallet-transfer-and-services-full-design-div
+{
+    height: 200px; 
+    width: 250px; 
+    background: #060633;
+    border: 1px solid #323070;
+    box-shadow: 2px 2px 2px #327ff2;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.wallet-transfer-and-services-full-design-div:hover
+{
+    box-shadow: 5px 3px 5px 3px #9999ff,-5px -3px 5px 3px #9999ff!important;
+    border: none !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.user-profile-change-password-design-div
+{
+    margin-left: 5%;
+    height: 120px; 
+    width: 90%; 
+    background: #a4fdfa;
+    border: 1px solid #a4fdfa;
+    box-shadow: 2px 2px 2px #a4fdfa;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.user-profile-change-password-design-div:hover
+{
+    box-shadow: 5px 3px 5px 3px #9999ff,-5px -3px 5px 3px #9999ff!important;
+    border: none !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.fa-passwd-reset > .fa-lock 
+{
+    font-size: 1rem;
+}
+
+.fa-stack
+{
+    color: #3333ff;
+    margin-left: 45%;
+}
+
+.fa-stack:hover
+{
+    color: #0000cc;
+}
+
+.image-height-auto-increment-div-design
+{
+    width: 100%;
+    height: 350px;
+}
+
+.bank-update-and-remove-div-design
+{
+    float: right;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 800;
+    margin-left: 2%;
+}
+
+.bank-update-and-remove-div-design:hover
+{
+    color: #0000ff;
+}
+
+.text-style-and-size-div-design
+{
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.span-number-div-design
+{
+    float: right;
+    font-size: 24px;
+    font-family: serif;
+}
+
+.task-number-div-design
+{
+    float: right;
+    font-size: 30px;
+    margin-top: -30px;
+    font-family: serif;
+    color: #cefff8;
+}
+
+.my-task-span-text-div-design
+{
+    font-size: 28px;
+    font-weight: 900;
+    font-family: serif;
+}
+
+.my-task-hyperlink-div-design
+{
+    color: black;
+    text-decoration: none;
+}
+
+.my-task-hyperlink-div-design:hover
+{
+    text-decoration: none;
+}
+
+.index-hyperlink-mobile-dtp-bill-div-design
+{
+    font-size: 20px;
+    font-weight: 800;
+    color: #000000;
+    text-decoration: none;
+}
+
+.index-hyperlink-mobile-dtp-bill-div-design:hover
+{
+    color: #0000ff;
+    text-decoration: none;
+}
+
+.mobile-bill-dpt-image-div-design
+{
+    height: 100px;
+    width: 100px;
+    border: 1px solid #A4C8E4;
+    border-radius: 50%;
+}
+
+.text-color-mobile-bill-dtp-div-design
+{
+    color: #ffffff;
+}
+
+.why-choose-us-div-design
+{
+    color: #000033;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.para-text-mobile-bill-dtp-div-design
+{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+
+.who-we-are-div-design
+{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 20px;
+}
+
+.who-we-are-our-mission-what-we-do-div-design
+{
+    color: #ffffff; 
+    font-size: 16px; 
+    margin: 10px;
+}
+
+.small-features-box-colors-div-design
+{
+    height: 200px;
+    border-radius: 5px;
+    border: none !important;
+    box-shadow: 1px 2px 1px 2px #f2f2f2,-1px -2px 1px 2px #f2f2f2!important;
+    
+}
+
+.term-condition-box-color-div-design
+{
+    height: 1650px;
+    border-radius: 5px;
+    border: none !important;
+    box-shadow: 1px 2px 1px 2px #f2f2f2,-1px -2px 1px 2px #f2f2f2!important;
+}
+
+.cpa-marketion-div-design
+{
+    color: #33ff33;
+    font-size: 50px;
+}
+
+.reputation-recover-div-design
+{
+    color: #cc00ff;
+    font-size: 50px;
+}
+
+.keyword-research-div-design
+{
+    color: #ff6633;
+    font-size: 50px;
+}
+
+.local-search-strategy-div-design
+{
+    color: #3399ff;
+    font-size: 50px;
+}
+
+.ads-format-div-design
+{
+    color: #666666;
+    font-size: 16px;
+}
+
+.popup-image-div-design
+{
+    height: 150px;
+    width: 200px;
+}
+
+.popunder-ads-deiv-design
+{
+    color: #00181a;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.popunder-para-div-design
+{
+    color: #666666;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.item-testimonial-box-div-design
+{
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 3px 2px 3px 2px #e7ebe7,-3px -2px 3px 2px #e7ebe7!important;
+    border: none !important;
+    border-radius: 10px;
+}
+
+.testimonial-box
+{
+    font-size: 50px;
+    color: #99ccff;
+    float: left;
+}
+
+.mb-0
+{
+    font-size: 24px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.download-android-app-div-design
+{
+    font-size: 20px;
+    font-weight: 700;
+    height: 60px;
+    width: 100%;
+    border: 0.5px solid #3333ff;
+    border-radius: 5px;
+    color: #ffffff;
+    background: #3333ff;
+    transition: 0.5s;
+}
+
+.download-android-app-div-design:hover
+{
+    color: #ffffff;
+    background: #0000ff;
+    border: 0.5px solid #0000ff;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.bold-text-color-div-design
+{
+    color: #666666;
+}
+
+.scan-qr-code-div-design
+{
+    height: 500px;
+    width: 350px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+
+.complete-today-tasks-div-design
+{
+    color: #0000cc;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+
+.third-level-security-member-care-self-server-div-design
+{
+    border: 0px solid #ffffff;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+
+/*
+*     ------------ For Slide in JS -------------
+*/
+
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Verdana, sans-serif;
+    margin: 0;
+}
+
+.mySlides
+{
+    display: none;
+}
+
+img
+{
+    vertical-align: middle;
+}
+
+.slideshow-container
+{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.prev , .next
+{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #e7e9e9;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover , .next:hover
+{
+    color: #818181;
+    text-decoration: none;
+    background-color: #e6d4f6;
+}
+
+.text
+{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext
+{
+    color: #f2f2f2;
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    font-weight: 800;
+}
+
+.dot
+{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover
+{
+    background-color: #717171;
+}
+
+@media only screen and (max-width: 600px)
+{
+    .prev , .next , .text
+    {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    .prev , .next , .text
+    {
+        font-size: 16px;
+    }
+}
+
+
+/*
+*    --------------- CSS Media ------------------
+*/
+@media screen and (max-width:600px)
+{
+    .topnav a:not(:first-child)
+    {
+        display: none;
+    }
+    .topnav a.icon
+    {
+        float: right;
+        display: block;
+    }
+    .logo_name_design
+    {
+        margin-left: 42%;
+    }
+    .logo_name_design_after_login
+    {
+        margin-left: 42%;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .topnav.responsive
+    {
+        position: relative;
+    }
+    .topnav.responsive .icon
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a
+    {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .topnav.responsive a button
+    {
+        float: none;
+        margin-top: 10px;
+    }
+    .logo_name_design
+    {
+        margin-left: 42%;
+    }
+    .logo_name_design_after_login
+    {
+        margin-left: 42%;
+    }
+}
+
+@media screen and (max-width:700px)
+{
+    .topnav a:not(:first-child)
+    {
+        display: none;
+    }
+    .topnav a.icon
+    {
+        float: right;
+        display: block;
+    }
+    .logo_name_design
+    {
+        margin-left: 42%;
+    }
+    .logo_name_design_after_login
+    {
+        margin-left: 42%;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    .topnav.responsive
+    {
+        position: relative;
+    }
+    .topnav.responsive .icon
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a
+    {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .topnav.responsive a button
+    {
+        float: none;
+        margin-top: 10px;
+    }
+    .logo_name_design
+    {
+        margin-left: 42%;
+    }
+    .logo_name_design_after_login
+    {
+        margin-left: 42%;
+    }
+}
+
+@media screen and (max-width:992px)
+{
+    .topnav a:not(:first-child)
+    {
+        display: none;
+    }
+    .topnav a.icon
+    {
+        float: right;
+        display: block;
+    }
+    .logo_name_design
+    {
+        margin-left: 42%;
+    }
+    .logo_name_design_after_login
+    {
+        margin-left: 42%;
+    }
+}
+
+@media screen and (max-width: 992px)
+{
+    .topnav.responsive
+    {
+        position: relative;
+    }
+    .topnav.responsive .icon
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a
+    {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .topnav.responsive a button
+    {
+        float: none;
+        margin-top: 10px;
+    }
+    .logo_name_design
+    {
+        margin-left: 42%;
+    }
+    .logo_name_design_after_login
+    {
+        margin-left: 42%;
+    }
+}
+
+@media screen and (max-width:1080px)
+{
+    .topnav a:not(:first-child)
+    {
+        display: none;
+    }
+    .topnav a.icon
+    {
+        float: right;
+        display: block;
+    }
+    .logo_name_design
+    {
+        margin-left: 42%;
+    }
+    .logo_name_design_after_login
+    {
+        margin-left: 42%;
+    }
+}
+
+@media screen and (max-width: 1080px)
+{
+    .topnav.responsive
+    {
+        position: relative;
+    }
+    .topnav.responsive .icon
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a
+    {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .topnav.responsive a button
+    {
+        float: none;
+        margin-top: 10px;
+    }
+    .logo_name_design
+    {
+        margin-left: 42%;
+    }
+    .logo_name_design_after_login
+    {
+        margin-left: 42%;
+    }
+}
+
+@media screen and (max-width:1255px)
+{
+    .topnav a:not(:first-child)
+    {
+        display: none;
+    }
+    .topnav a.icon
+    {
+        float: right;
+        display: block;
+    }
+    .logo_name_design
+    {
+        margin-left: 42%;
+    }
+    .logo_name_design_after_login
+    {
+        margin-left: 42%;
+    }
+}
+
+@media screen and (max-width: 1255px)
+{
+    .topnav.responsive
+    {
+        position: relative;
+    }
+    .topnav.responsive .icon
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a
+    {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .topnav.responsive a button
+    {
+        float: none;
+        margin-top: 10px;
+    }
+    .logo_name_design
+    {
+        margin-left: 42%;
+    }
+    .logo_name_design_after_login
+    {
+        margin-left: 42%;
+    }
+}
+
+@media screen and (max-width:1480px)
+{
+    .topnav a:not(:first-child)
+    {
+        display: none;
+    }
+    .topnav a.icon
+    {
+        float: right;
+        display: block;
+    }
+    .logo_name_design
+    {
+        margin-left: 42%;
+    }
+    .logo_name_design_after_login
+    {
+        margin-left: 42%;
+    }
+}
+
+@media screen and (max-width: 1480px)
+{
+    .topnav.responsive
+    {
+        position: relative;
+    }
+    .topnav.responsive .icon
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a
+    {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .topnav.responsive a button
+    {
+        float: none;
+        margin-top: 10px;
+    }
+    .logo_name_design
+    {
+        margin-left: 42%;
+    }
+    .logo_name_design_after_login
+    {
+        margin-left: 42%;
+    }
+}
+
