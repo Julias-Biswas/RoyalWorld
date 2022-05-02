@@ -169,10 +169,10 @@
 
                                         <input type="text" placeholder="Enter Name" name="name1" class="another_textfield_div_design" value="<jsp:expression>name</jsp:expression>" readonly="readonly" onkeyup="val('name_error')"/> <br> <span id="name_error" style="font-size: 12px; font-weight: bold; color: #ff0000;"> </span> <br> <br>
                                         <input type="text" placeholder="Enter Email" name="email1" class="another_textfield_div_design" value="<jsp:expression>email</jsp:expression>" readonly="readonly" onkeyup="val('email_error')"/> <br> <span id="email_error" style="font-size: 12px; font-weight: bold; color: #ff0000;"> </span> <br> <br>
-                                            <input type="text" placeholder="Enter Subject" name="subject1" class="another_textfield_div_design" onkeyup="val('subject_error')" /> <br> <span id="subject_error" style="font-size: 12px; font-weight: bold; color: #ff0000;"> </span> <br> <br>
-                                            <textarea class="textarea_div_design" placeholder="Enter Message" name="message1" onkeyup="val('message_error')" ></textarea> <br> <span id="message_error" style="font-size: 12px; font-weight: bold; color: #ff0000;"> </span> <br><br>
-                                            <input type="submit" value="Send" class="btn upload-image-button-design-div" /> <br><br>
-                                        </form>
+                                        <input type="text" placeholder="Enter Subject" name="subject1" class="another_textfield_div_design" onkeyup="val('subject_error')" /> <br> <span id="subject_error" style="font-size: 12px; font-weight: bold; color: #ff0000;"> </span> <br> <br>
+                                        <textarea class="textarea_div_design" placeholder="Enter Message" name="message1" onkeyup="val('message_error')" ></textarea> <br> <span id="message_error" style="font-size: 12px; font-weight: bold; color: #ff0000;"> </span> <br><br>
+                                        <input type="submit" value="Send" class="btn upload-image-button-design-div" /> <br><br>
+                                    </form>
                                     <jsp:scriptlet>
                                             }
                                     </jsp:scriptlet>

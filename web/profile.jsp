@@ -73,7 +73,7 @@
     String plan_active_or_not2 = null;
     
     double percentageOfEveryPlanCost;
-    int amount ;
+    int amount = 4;
     
     double userSponserIncome = 0;
     double userSponserTotalIncome = 0;
