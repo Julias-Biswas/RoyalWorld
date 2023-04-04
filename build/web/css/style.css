@@ -200,7 +200,6 @@ body
 .register_div_design
 {
     text-align: center;
-    //background: linear-gradient(to bottom, #ffffff -8%, #ffccff 103%);
     background: linear-gradient(to bottom right, #ffcccc 46%, #66ffcc 100%);
     box-shadow: 0px 0px 0px grey inset;
     border-radius: 15px;
